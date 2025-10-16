@@ -17,7 +17,7 @@ const MODEL = {
 
 exports.protect = catchAsync(async (req, res, next) => {
   let token;
- 
+ next();
 
   // 1) Get token from Authorization header or cookies
   if (
@@ -53,7 +53,7 @@ exports.protect = catchAsync(async (req, res, next) => {
     );
   }
   // console.log('🚀 ~ PROTECT MIDDLEWARE decoded:', decoded);
-  // 3) Check if token is still valid in Redis
+  // 3) Check if token is still valid in 
   let redisUserId = await Redis.getUserIdFromToken(token);
   // console.log('🚀 ~ PROTECT MIDDLEWARE FROM REDIS USER ID :', redisUserId);
   // console.log('🚀 ~ decoded.entity:', decoded);
