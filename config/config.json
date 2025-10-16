@@ -14,10 +14,14 @@
         "dialect": "mysql"
     },
     "production": {
-        "username": "root",
-        "password": "GnewP@ss4131",
-        "database": "mysql-database",
-        "host": "127.0.0.1",
-        "dialect": "mysql"
-    }
+    "username": "guest",
+    "password": "GnewP@ss4131",
+    "database": "Busybeans",
+    "host": "mysql-database",
+    "port": 3306,
+    "dialect": "mysql",
+    "dialectOptions": {
+    "connectTimeout": 60000
+  },
+  "logging": false
 }
