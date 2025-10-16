@@ -1,6 +1,6 @@
 const db = require("./models");
 require("dotenv").config();
-require("./redis_connect");
+// require("./redis_connect");
 const server = require("./app");
 
 const serverPort = process.env.PORT || 8011;
