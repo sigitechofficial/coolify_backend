@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { user, account, supplier, salesRep, employee } = require('../models');
 const AppError = require('../utils/appError');
-const Redis = require('../utils/redisHandling');
+// const Redis = require('../utils/redisHandling');
 const { promisify } = require('util');
 const jwt = require('jsonwebtoken');
 const catchAsync = require('./../utils/catchAsync');
