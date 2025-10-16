@@ -1,0 +1,23 @@
+{
+    "development": {
+        "username": "trimworldwide_bb",
+        "password": "GnewP@ss958",
+        "database": "trimworldwide_bb",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    },
+    "test": {
+        "username": "trimworldwide_stagebb",
+        "password": "GnewP@ss4131",
+        "database": "trimworldwide_stagebb",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    },
+    "production": {
+        "username": "guest",
+        "password": "GnewP@ss4131",
+        "database": "Busybeans",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    }
+}
