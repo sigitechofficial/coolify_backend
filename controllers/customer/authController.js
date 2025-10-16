@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const crypto = require('crypto');
 const { promisify } = require('util');
-const REDIS = require('../../utils/redisHandling');
+// const REDIS = require('../../utils/redisHandling');
 const jwt = require('jsonwebtoken');
 // const { Op, literal, col, fn, where } = require('sequelize');
 const {
@@ -53,7 +53,7 @@ const createSendToken = (input, statusCode, req, res, tokenId = '') => {
   input.updatedAt = undefined;
   input.deletedAt = undefined;
   input.deleted = undefined;
-  REDIS.storeAccessToken(`user${input.id}`, token);
+  // REDIS.storeAccessToken(`user${input.id}`, token);
   res.status(statusCode).json({
     status: 'success',
     data: {
